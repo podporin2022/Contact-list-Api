@@ -1,0 +1,205 @@
+
+input[type=text] {
+    padding:10px;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.20);
+    max-width: 400px;
+}
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    border-bottom: 5px solid cadetblue;
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+
+}
+
+
+.list h1{
+    text-align: center;
+}
+.item{
+    background: skyblue;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.item p{
+    margin-top: 5px;
+}
+.close{
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.list{
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.edit-container{
+    background: #f8c333;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 45px;
+    max-height: 420px;
+
+}
+.save-btn{
+    right: 5px;
+    bottom: 4px;
+    padding: 4px;
+    background: skyblue;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 100%;
+    margin: 10px 5px 0px 0px;
+    text-align: center;
+
+}
+.item-content{
+    display: flex;
+    flex-direction: column;
+}
+.item{
+    background: skyblue;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 30px;
+    transition: 0.6s;
+
+}
+.item:hover{
+    box-shadow: 0 0 15px 4px #f8c333;
+
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.active-list{
+    border: 2px solid #f8c333;
+}
+.user_avatar{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 15px 4px white;
+}
+.user_avatar img{
+    object-fit: cover;
+    width: 100%;
+}
+.item-title{
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 15px;
+}
+.item-title:hover{
+    box-shadow: 0 0 15px 4px white;
+}
+.item-body:hover{
+    box-shadow: 0 0 15px 4px white;
+}
+.time:hover{
+    box-shadow: 0 0 15px 4px white;
+}
+.item-body{
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 15px;
+}
+.time{
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 15px;
+}
+.item-actions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.complete{
+    right: 5px;
+    bottom: 5px;
+    padding: 5px;
+    background: #f8c333;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 50%;
+    margin: 10px 0px 0px 5px;
+    text-align: center;
+}
+.close{
+    right: 5px;
+    bottom: 5px;
+    padding: 5px;
+    background: #f8c333;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 50%;
+    margin: 10px 5px 0px 0px;
+    text-align: center;
+}
+
+.complete:hover{
+    box-shadow: 0 0 10px 4px white;
+}
+.close:hover{
+    box-shadow: 0 0 10px 4px white;
+}
+
+
+
+
+
+
+
+
+
+
+.todo-complete{
+    background-color: lawngreen;
+}
+.hide-element{
+    display: none;
+}
+.edit-container{
+    display: none;
+}
+
+.edit-container input[type=text]{
+    margin-top: 15px;
+}
+.show{
+    display: block;
+
+}
+
+
+
+
+.time{
+
+}

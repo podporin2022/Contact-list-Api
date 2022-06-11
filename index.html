@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script defer src="contactApi/cont.js"></script>
+	<script defer src="contactApi/http.js"></script>
+	<script defer src="app.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact</title>
+</head>
+<body>
+<div class="header">
+		<input type="text" class="name" placeholder="Title">
+		<input type="text" class="lastName" placeholder="Body">
+		<input type="text" class="phone" placeholder="Phone"
+			   onclick="(function(event){if (!event.target.value.length){event.target.value='+38';}})(event)"
+			   oninput="(function(event){const x=event.target.value.replace(/\D/g, '').match(/(\d{0,2})(\d{0})(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})/);
+                              event.target.value='+38' + (x[4] ? ' (' + x[3] + ') ' : '' + x[3]) + x[4] + (x[5] ? '-' + x[5] : '') + (x[6] ? '-' + x[6] : '');})(event)"
+			   pattern="^\+38\s[\(]?0(39|67|68|96|97|98|50|66|95|99|63|93|91|92|94)[\)]\s\d{3}[\-]\d{2}[\-]\d{2}$"
+			   placeholder="Ваш телефон" required="required" title="Формат: +38 (0XX) XXX-XX-XX. Проверьте правильность кода оператора.">
+		<button type="submit" class="create">Create</button>
+</div>
+
+
+
+
+
+
+<div class="content">
+	<div class="list"></div>
+			<div class="edit-container">
+				<div class="item-content">
+					<div class="contact-info">
+						<div class="user_avatar">
+							<img src="../Avatar_poe84it.png">
+						</div>
+						<input type="text" class="edit-title" placeholder="Title">
+						<input type="text" class="edit-body" placeholder="Body">
+						<input type="text" class="edit-phone" placeholder="Body">
+
+					</div>
+					<div class="item-actions">
+						<div class="save-btn">SAVE</div>
+					</div>
+				</div>
+	</div>
+</div>
+</body>
+</html>
